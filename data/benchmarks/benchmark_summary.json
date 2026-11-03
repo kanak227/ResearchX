@@ -1,0 +1,54 @@
+{
+  "exp_a_text_only": {
+    "config_name": "exp_a_text_only",
+    "precision_at_k": 0.04,
+    "recall_at_k": 0.2,
+    "mrr": 0.05,
+    "answer_correctness": 0.1667,
+    "citation_accuracy": 0.1,
+    "faithfulness": 0.3167,
+    "avg_response_latency": 0.5145,
+    "avg_retrieval_latency": 0.0924,
+    "sample_count": 5,
+    "elapsed_seconds": 2.73
+  },
+  "exp_b_hybrid": {
+    "config_name": "exp_b_hybrid",
+    "precision_at_k": 0.04,
+    "recall_at_k": 0.2,
+    "mrr": 0.05,
+    "answer_correctness": 0.1558,
+    "citation_accuracy": 0.1,
+    "faithfulness": 0.3058,
+    "avg_response_latency": 0.0711,
+    "avg_retrieval_latency": 0.0111,
+    "sample_count": 5,
+    "elapsed_seconds": 0.38
+  },
+  "exp_c_multimodal": {
+    "config_name": "exp_c_multimodal",
+    "precision_at_k": 0.04,
+    "recall_at_k": 0.2,
+    "mrr": 0.05,
+    "answer_correctness": 0.1756,
+    "citation_accuracy": 0.1,
+    "faithfulness": 0.3256,
+    "avg_response_latency": 0.0721,
+    "avg_retrieval_latency": 0.0109,
+    "sample_count": 5,
+    "elapsed_seconds": 0.39
+  },
+  "exp_d_multimodal_rerank": {
+    "config_name": "exp_d_multimodal_rerank",
+    "precision_at_k": 0.04,
+    "recall_at_k": 0.2,
+    "mrr": 0.05,
+    "answer_correctness": 0.1897,
+    "citation_accuracy": 0.1,
+    "faithfulness": 0.7162,
+    "avg_response_latency": 0.0671,
+    "avg_retrieval_latency": 0.0123,
+    "sample_count": 5,
+    "elapsed_seconds": 0.41
+  }
+}

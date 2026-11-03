@@ -1,0 +1,47 @@
+[
+  {
+    "id": "q1",
+    "paper_title_cue": "Attention",
+    "question": "What is the computational complexity of Self-Attention per layer?",
+    "expected_answer": "Self-Attention complexity per layer is O(n^2 * d), where n is the sequence length and d is the representation dimension.",
+    "expected_page": 6,
+    "expected_section": "Complexity",
+    "target_element_type": "table"
+  },
+  {
+    "id": "q2",
+    "paper_title_cue": "Attention",
+    "question": "Which dataset was used to train the English-to-German Transformer translation model?",
+    "expected_answer": "The WMT 2014 English-German dataset consisting of 4.5 million sentence pairs was used.",
+    "expected_page": 7,
+    "expected_section": "Training Data",
+    "target_element_type": "text"
+  },
+  {
+    "id": "q3",
+    "paper_title_cue": "Attention",
+    "question": "What BLEU score did the big Transformer model achieve on the English-to-French benchmark?",
+    "expected_answer": "The big Transformer model achieved a state-of-the-art BLEU score of 41.8 on the WMT 2014 English-to-French benchmark.",
+    "expected_page": 8,
+    "expected_section": "Results",
+    "target_element_type": "table"
+  },
+  {
+    "id": "q4",
+    "paper_title_cue": "Attention",
+    "question": "Explain the architecture of the Transformer model as depicted in Figure 1.",
+    "expected_answer": "The Transformer uses an encoder-decoder structure consisting of stacked multi-head self-attention and position-wise feed-forward layers with residual connections.",
+    "expected_page": 3,
+    "expected_section": "Model Architecture",
+    "target_element_type": "figure"
+  },
+  {
+    "id": "q5",
+    "paper_title_cue": "Attention",
+    "question": "What is the mathematical formula for Scaled Dot-Product Attention?",
+    "expected_answer": "Attention(Q, K, V) = softmax(Q K^T / sqrt(d_k)) V",
+    "expected_page": 4,
+    "expected_section": "Attention",
+    "target_element_type": "equation"
+  }
+]

@@ -1,0 +1,329 @@
+{
+  "paper_id": "paper_rag",
+  "metadata": {
+    "title": "Multimodal Retrieval-Augmented Generation for Scientific Literature Intelligence",
+    "authors": [
+      "Patrick Lewis",
+      "Ethan Perez",
+      "Aleksandra Piktus",
+      "Sebastian Riedel"
+    ],
+    "abstract": "",
+    "published_year": 2024,
+    "journal_venue": "Scientific Publication",
+    "page_count": 2,
+    "doi": "10.1145/3678.2024.0891",
+    "total_sections": 1,
+    "total_tables": 1,
+    "total_figures": 1,
+    "total_equations": 1,
+    "extra": {}
+  },
+  "element_count": 16,
+  "elements": [
+    {
+      "id": "paper_rag_p1_txt_0",
+      "paper_id": "paper_rag",
+      "page_number": 1,
+      "section_name": "Introduction",
+      "element_type": "text",
+      "content": "Multimodal Retrieval-Augmented Generation for Scientific Literature Intelligence",
+      "raw_content": "Multimodal Retrieval-Augmented Generation for Scientific Literature Intelligence",
+      "source_coordinates": {
+        "x0": 50.0,
+        "y0": 53.88,
+        "x1": 579.37,
+        "y1": 74.49,
+        "width": 529.37,
+        "height": 20.61
+      },
+      "extraction_method": "pymupdf_layout",
+      "created_at": "2026-11-02T18:59:30.127352"
+    },
+    {
+      "id": "paper_rag_p1_txt_1",
+      "paper_id": "paper_rag",
+      "page_number": 1,
+      "section_name": "Introduction",
+      "element_type": "text",
+      "content": "Patrick Lewis, Ethan Perez, Aleksandra Piktus, Sebastian Riedel",
+      "raw_content": "Patrick Lewis, Ethan Perez, Aleksandra Piktus, Sebastian Riedel",
+      "source_coordinates": {
+        "x0": 50.0,
+        "y0": 89.25,
+        "x1": 336.23,
+        "y1": 102.99,
+        "width": 286.23,
+        "height": 13.74
+      },
+      "extraction_method": "pymupdf_layout",
+      "created_at": "2026-11-02T18:59:30.127352"
+    },
+    {
+      "id": "paper_rag_p1_txt_2",
+      "paper_id": "paper_rag",
+      "page_number": 1,
+      "section_name": "Introduction",
+      "element_type": "text",
+      "content": "Meta AI Research & University College London, 2024. DOI: 10.1145/3678.2024.0891",
+      "raw_content": "Meta AI Research & University College London, 2024. DOI: 10.1145/3678.2024.0891",
+      "source_coordinates": {
+        "x0": 50.0,
+        "y0": 110.32,
+        "x1": 389.18,
+        "y1": 122.69,
+        "width": 339.18,
+        "height": 12.37
+      },
+      "extraction_method": "pymupdf_layout",
+      "created_at": "2026-11-02T18:59:30.127352"
+    },
+    {
+      "id": "paper_rag_p1_txt_3",
+      "paper_id": "paper_rag",
+      "page_number": 1,
+      "section_name": "Introduction",
+      "element_type": "text",
+      "content": "Abstract?Large language models often struggle to synthesize information accurately from complex technical papers containing tables, architecture diagrams, and mathematical formulations. We propose Multimodal-RAG, an architecture combining dense vector embeddings, BM25 inverted keyword indices, and structured extraction of figures and tables. Evaluations demonstrate that incorporating multimodal elements improves Mean Reciprocal Rank (MRR) by 26.4% and citation accuracy by 34.2% over text-only baselines.",
+      "raw_content": "Abstract?Large language models often struggle to synthesize information accurately from complex technical papers containing tables, architecture diagrams, and mathematical formulations. We propose Multimodal-RAG, an architecture combining dense vector embeddings, BM25 inverted keyword indices, and structured extraction of figures and tables. Evaluations demonstrate that incorporating multimodal elements improves Mean Reciprocal Rank (MRR) by 26.4% and citation accuracy by 34.2% over text-only baselines.",
+      "source_coordinates": {
+        "x0": 50.0,
+        "y0": 140.0,
+        "x1": 543.39,
+        "y1": 206.05,
+        "width": 493.39,
+        "height": 66.05
+      },
+      "extraction_method": "pymupdf_layout",
+      "created_at": "2026-11-02T18:59:30.127352"
+    },
+    {
+      "id": "paper_rag_p1_txt_4",
+      "paper_id": "paper_rag",
+      "page_number": 1,
+      "section_name": "Introduction",
+      "element_type": "text",
+      "content": "1. Introduction & Problem Statement Scientific literature is inherently multimodal: vital findings, performance metrics, and model layouts reside inside tables and figures rather than body paragraphs. Conventional text-only RAG systems discard non-textual data during document ingestion, yielding hallucinated responses when querying numerical metrics or architecture workflows.",
+      "raw_content": "1. Introduction & Problem Statement Scientific literature is inherently multimodal: vital findings, performance metrics, and model layouts reside inside tables and figures rather than body paragraphs. Conventional text-only RAG systems discard non-textual data during document ingestion, yielding hallucinated responses when querying numerical metrics or architecture workflows.",
+      "source_coordinates": {
+        "x0": 50.0,
+        "y0": 240.0,
+        "x1": 532.86,
+        "y1": 292.71,
+        "width": 482.86,
+        "height": 52.71
+      },
+      "extraction_method": "pymupdf_layout",
+      "created_at": "2026-11-02T18:59:30.127352"
+    },
+    {
+      "id": "paper_rag_p1_txt_5",
+      "paper_id": "paper_rag",
+      "page_number": 1,
+      "section_name": "Introduction",
+      "element_type": "text",
+      "content": "2. Proposed Hybrid Multimodal Retrieval Pipeline Our method introduces a unified indexing pipeline. PDFs are parsed into structural text, markdown tables, high-resolution figures, and mathematical equations. Retrieval combines dense vector search with sparse BM25 scoring using Reciprocal Rank Fusion (RRF):",
+      "raw_content": "2. Proposed Hybrid Multimodal Retrieval Pipeline Our method introduces a unified indexing pipeline. PDFs are parsed into structural text, markdown tables, high-resolution figures, and mathematical equations. Retrieval combines dense vector search with sparse BM25 scoring using Reciprocal Rank Fusion (RRF):",
+      "source_coordinates": {
+        "x0": 50.0,
+        "y0": 306.72,
+        "x1": 545.0,
+        "y1": 359.43,
+        "width": 495.0,
+        "height": 52.71
+      },
+      "extraction_method": "pymupdf_layout",
+      "created_at": "2026-11-02T18:59:30.127352"
+    },
+    {
+      "id": "paper_rag_p1_txt_6",
+      "paper_id": "paper_rag",
+      "page_number": 1,
+      "section_name": "Introduction",
+      "element_type": "text",
+      "content": "RRF_Score(d) = sum(w_i / (k + rank_i(d)))    (1)",
+      "raw_content": "RRF_Score(d) = sum(w_i / (k + rank_i(d)))    (1)",
+      "source_coordinates": {
+        "x0": 50.0,
+        "y0": 373.45,
+        "x1": 236.44,
+        "y1": 386.12,
+        "width": 186.44,
+        "height": 12.67
+      },
+      "extraction_method": "pymupdf_layout",
+      "created_at": "2026-11-02T18:59:30.127352"
+    },
+    {
+      "id": "paper_rag_p1_txt_7",
+      "paper_id": "paper_rag",
+      "page_number": 1,
+      "section_name": "Introduction",
+      "element_type": "text",
+      "content": "where k = 60 and w_i is the modality weight parameter.",
+      "raw_content": "where k = 60 and w_i is the modality weight parameter.",
+      "source_coordinates": {
+        "x0": 50.0,
+        "y0": 400.14,
+        "x1": 262.48,
+        "y1": 412.81,
+        "width": 212.48,
+        "height": 12.67
+      },
+      "extraction_method": "pymupdf_layout",
+      "created_at": "2026-11-02T18:59:30.127352"
+    },
+    {
+      "id": "paper_rag_p1_txt_9",
+      "paper_id": "paper_rag",
+      "page_number": 1,
+      "section_name": "Introduction",
+      "element_type": "text",
+      "content": "Figure 1: Multimodal RAG pipeline integrating structural PDF parsing, hybrid search, and deterministic claim verification.",
+      "raw_content": "Figure 1: Multimodal RAG pipeline integrating structural PDF parsing, hybrid search, and deterministic claim verification.",
+      "source_coordinates": {
+        "x0": 50.0,
+        "y0": 635.86,
+        "x1": 500.64,
+        "y1": 647.54,
+        "width": 450.64,
+        "height": 11.68
+      },
+      "extraction_method": "pymupdf_layout",
+      "created_at": "2026-11-02T18:59:30.127352"
+    },
+    {
+      "id": "paper_rag_p1_fig_0",
+      "paper_id": "paper_rag",
+      "page_number": 1,
+      "section_name": "Introduction",
+      "element_type": "figure",
+      "content": "**[ARCHITECTURE_DIAGRAM]** Figure 1: Multimodal RAG pipeline integrating structural PDF parsing, hybrid search, and deterministic claim verification.\n\n*Image Path:* `extracted/paper_rag/figures/fig_p1_0.png`\n\nFigure 1: Multimodal RAG pipeline integrating structural PDF parsing, hybrid search, and deterministic claim verification.. High-resolution visual element representing architecture diagram.",
+      "raw_content": "{'caption': 'Figure 1: Multimodal RAG pipeline integrating structural PDF parsing, hybrid search, and deterministic claim verification.', 'image_path': 'extracted/paper_rag/figures/fig_p1_0.png', 'type': 'architecture_diagram', 'dimensions': {'width': 600, 'height': 220}}",
+      "source_coordinates": {
+        "x0": 92.95,
+        "y0": 480.0,
+        "x1": 502.05,
+        "y1": 630.0,
+        "width": 409.09,
+        "height": 150.0
+      },
+      "extraction_method": "pymupdf_image_xref",
+      "created_at": "2026-11-02T18:59:30.127352"
+    },
+    {
+      "id": "paper_rag_p1_eq_6",
+      "paper_id": "paper_rag",
+      "page_number": 1,
+      "section_name": "Introduction",
+      "element_type": "equation",
+      "content": "**Equation (1)**\n\n$$\nRRF_Score(d) = sum(w_i / (k + rank_i(d)))    (1)\n$$",
+      "raw_content": "RRF_Score(d) = sum(w_i / (k + rank_i(d)))    (1)",
+      "source_coordinates": {
+        "x0": 50.0,
+        "y0": 373.45,
+        "x1": 236.44,
+        "y1": 386.12,
+        "width": 186.44,
+        "height": 12.67
+      },
+      "extraction_method": "pymupdf_math_heuristics",
+      "created_at": "2026-11-02T18:59:30.127352"
+    },
+    {
+      "id": "paper_rag_p2_txt_0",
+      "paper_id": "paper_rag",
+      "page_number": 2,
+      "section_name": "Introduction",
+      "element_type": "text",
+      "content": "3. Experimental Benchmarks We evaluate on the SciDoc-QA benchmark across 30 research papers. We compare four configurations: Text-Only RAG, Hybrid Text RAG, Multimodal RAG, and Multimodal RAG with Cross-Encoder Reranking.",
+      "raw_content": "3. Experimental Benchmarks We evaluate on the SciDoc-QA benchmark across 30 research papers. We compare four configurations: Text-Only RAG, Hybrid Text RAG, Multimodal RAG, and Multimodal RAG with Cross-Encoder Reranking.",
+      "source_coordinates": {
+        "x0": 50.0,
+        "y0": 60.0,
+        "x1": 541.23,
+        "y1": 99.36,
+        "width": 491.23,
+        "height": 39.36
+      },
+      "extraction_method": "pymupdf_layout",
+      "created_at": "2026-11-02T18:59:30.127352"
+    },
+    {
+      "id": "paper_rag_p2_txt_1",
+      "paper_id": "paper_rag",
+      "page_number": 2,
+      "section_name": "Introduction",
+      "element_type": "text",
+      "content": "Table 1: Retrieval and Grounding Performance across Scientific RAG Configurations | Configuration | Precision@5 | Recall@5 | MRR | Citation Acc (%) | Faithfulness (%) | | --- | --- | --- | --- | --- | --- | | Exp A: Text-Only RAG | 0.520 | 0.610 | 0.540 | 58.2 | 64.5 | | Exp B: Hybrid Text RAG | 0.640 | 0.720 | 0.670 | 71.0 | 73.2 | | Exp C: Multimodal RAG | 0.780 | 0.850 | 0.810 | 84.6 | 82.0 | | Exp D: Multimodal + Rerank | 0.890 | 0.940 | 0.910 | 94.2 | 91.8 |",
+      "raw_content": "Table 1: Retrieval and Grounding Performance across Scientific RAG Configurations | Configuration | Precision@5 | Recall@5 | MRR | Citation Acc (%) | Faithfulness (%) | | --- | --- | --- | --- | --- | --- | | Exp A: Text-Only RAG | 0.520 | 0.610 | 0.540 | 58.2 | 64.5 | | Exp B: Hybrid Text RAG | 0.640 | 0.720 | 0.670 | 71.0 | 73.2 | | Exp C: Multimodal RAG | 0.780 | 0.850 | 0.810 | 84.6 | 82.0 | | Exp D: Multimodal + Rerank | 0.890 | 0.940 | 0.910 | 94.2 | 91.8 |",
+      "source_coordinates": {
+        "x0": 50.0,
+        "y0": 130.0,
+        "x1": 514.4,
+        "y1": 204.1,
+        "width": 464.4,
+        "height": 74.1
+      },
+      "extraction_method": "pymupdf_layout",
+      "created_at": "2026-11-02T18:59:30.127352"
+    },
+    {
+      "id": "paper_rag_p2_txt_2",
+      "paper_id": "paper_rag",
+      "page_number": 2,
+      "section_name": "Introduction",
+      "element_type": "text",
+      "content": "4. Stated Limitations & Hardware Bottlenecks The authors explicitly state that extracting vector diagrams and rasterizing complex mathematical equations introduces a 15-20% latency overhead during initial PDF ingestion. Furthermore, vision-language models required for dense diagram captioning require substantial GPU VRAM, presenting deployment hurdles on edge and CPU-only devices.",
+      "raw_content": "4. Stated Limitations & Hardware Bottlenecks The authors explicitly state that extracting vector diagrams and rasterizing complex mathematical equations introduces a 15-20% latency overhead during initial PDF ingestion. Furthermore, vision-language models required for dense diagram captioning require substantial GPU VRAM, presenting deployment hurdles on edge and CPU-only devices.",
+      "source_coordinates": {
+        "x0": 50.0,
+        "y0": 280.0,
+        "x1": 540.48,
+        "y1": 332.71,
+        "width": 490.48,
+        "height": 52.71
+      },
+      "extraction_method": "pymupdf_layout",
+      "created_at": "2026-11-02T18:59:30.127352"
+    },
+    {
+      "id": "paper_rag_p2_txt_3",
+      "paper_id": "paper_rag",
+      "page_number": 2,
+      "section_name": "Introduction",
+      "element_type": "text",
+      "content": "5. Future Work We plan to investigate lightweight heuristic diagram classification combined with ONNX-quantized cross-encoders to deliver real-time sub-second query latency on commodity hardware.",
+      "raw_content": "5. Future Work We plan to investigate lightweight heuristic diagram classification combined with ONNX-quantized cross-encoders to deliver real-time sub-second query latency on commodity hardware.",
+      "source_coordinates": {
+        "x0": 50.0,
+        "y0": 346.72,
+        "x1": 528.35,
+        "y1": 386.09,
+        "width": 478.35,
+        "height": 39.36
+      },
+      "extraction_method": "pymupdf_layout",
+      "created_at": "2026-11-02T18:59:30.127352"
+    },
+    {
+      "id": "paper_rag_p2_tbl_text",
+      "paper_id": "paper_rag",
+      "page_number": 2,
+      "section_name": "Introduction",
+      "element_type": "table",
+      "content": "### Table 1: Retrieval and Grounding Performance across Scientific RAG Configurations\n\n| Configuration | Precision@5 | Recall@5 | MRR | Citation Acc (%) | Faithfulness (%) |\n| --- | --- | --- | --- | --- | --- |\n| Exp A: Text-Only RAG | 0.520 | 0.610 | 0.540 | 58.2 | 64.5 |\n| Exp B: Hybrid Text RAG | 0.640 | 0.720 | 0.670 | 71.0 | 73.2 |\n| Exp C: Multimodal RAG | 0.780 | 0.850 | 0.810 | 84.6 | 82.0 |\n| Exp D: Multimodal + Rerank | 0.890 | 0.940 | 0.910 | 94.2 | 91.8 |",
+      "raw_content": "{'caption': 'Table 1: Retrieval and Grounding Performance across Scientific RAG Configurations', 'columns': ['Configuration', 'Precision@5', 'Recall@5', 'MRR', 'Citation Acc (%)', 'Faithfulness (%)'], 'rows': [['Exp A: Text-Only RAG', '0.520', '0.610', '0.540', '58.2', '64.5'], ['Exp B: Hybrid Text RAG', '0.640', '0.720', '0.670', '71.0', '73.2'], ['Exp C: Multimodal RAG', '0.780', '0.850', '0.810', '84.6', '82.0'], ['Exp D: Multimodal + Rerank', '0.890', '0.940', '0.910', '94.2', '91.8']], 'row_count': 4, 'column_count': 6}",
+      "source_coordinates": {
+        "x0": 50.0,
+        "y0": 150.0,
+        "x1": 545.0,
+        "y1": 300.0,
+        "width": 495.0,
+        "height": 150.0
+      },
+      "extraction_method": "text_pipe_parser",
+      "created_at": "2026-11-02T18:59:30.127352"
+    }
+  ]
+}

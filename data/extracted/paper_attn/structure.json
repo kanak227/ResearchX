@@ -1,0 +1,367 @@
+{
+  "paper_id": "paper_attn",
+  "metadata": {
+    "title": "Attention Mechanisms in Deep Neural Architectures: A Comprehensive Empirical S",
+    "authors": [
+      "Ashish Vaswani",
+      "Noam Shazeer",
+      "Niki Parmar",
+      "Jakob Uszkoreit"
+    ],
+    "abstract": "",
+    "published_year": 2024,
+    "journal_venue": "Scientific Publication",
+    "page_count": 2,
+    "doi": "10.1145/3345.2024.1102",
+    "total_sections": 1,
+    "total_tables": 1,
+    "total_figures": 1,
+    "total_equations": 1,
+    "extra": {}
+  },
+  "element_count": 18,
+  "elements": [
+    {
+      "id": "paper_attn_p1_txt_0",
+      "paper_id": "paper_attn",
+      "page_number": 1,
+      "section_name": "Introduction",
+      "element_type": "text",
+      "content": "Attention Mechanisms in Deep Neural Architectures: A Comprehensive Empirical S",
+      "raw_content": "Attention Mechanisms in Deep Neural Architectures: A Comprehensive Empirical S",
+      "source_coordinates": {
+        "x0": 50.0,
+        "y0": 53.88,
+        "x1": 601.01,
+        "y1": 74.49,
+        "width": 551.01,
+        "height": 20.61
+      },
+      "extraction_method": "pymupdf_layout",
+      "created_at": "2026-11-02T18:59:25.242049"
+    },
+    {
+      "id": "paper_attn_p1_txt_1",
+      "paper_id": "paper_attn",
+      "page_number": 1,
+      "section_name": "Introduction",
+      "element_type": "text",
+      "content": "Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit",
+      "raw_content": "Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit",
+      "source_coordinates": {
+        "x0": 50.0,
+        "y0": 89.25,
+        "x1": 327.3,
+        "y1": 102.99,
+        "width": 277.3,
+        "height": 13.74
+      },
+      "extraction_method": "pymupdf_layout",
+      "created_at": "2026-11-02T18:59:25.242049"
+    },
+    {
+      "id": "paper_attn_p1_txt_2",
+      "paper_id": "paper_attn",
+      "page_number": 1,
+      "section_name": "Introduction",
+      "element_type": "text",
+      "content": "Google Brain & Research Labs, 2024. DOI: 10.1145/3345.2024.1102",
+      "raw_content": "Google Brain & Research Labs, 2024. DOI: 10.1145/3345.2024.1102",
+      "source_coordinates": {
+        "x0": 50.0,
+        "y0": 110.32,
+        "x1": 325.17,
+        "y1": 122.69,
+        "width": 275.17,
+        "height": 12.37
+      },
+      "extraction_method": "pymupdf_layout",
+      "created_at": "2026-11-02T18:59:25.242049"
+    },
+    {
+      "id": "paper_attn_p1_txt_3",
+      "paper_id": "paper_attn",
+      "page_number": 1,
+      "section_name": "Introduction",
+      "element_type": "text",
+      "content": "Abstract?Dominant sequence transduction models are based on complex recurrent or convolutional neural networks that include an encoder and a decoder. In this work, we evaluate the Transformer, a model architecture eschewing recurrence and instead relying entirely on an attention mechanism to draw global dependencies between input and output. Experiments on two machine translation tasks show these models to be superior in quality while being more parallelizable and requiring significantly less time to train.",
+      "raw_content": "Abstract?Dominant sequence transduction models are based on complex recurrent or convolutional neural networks that include an encoder and a decoder. In this work, we evaluate the Transformer, a model architecture eschewing recurrence and instead relying entirely on an attention mechanism to draw global dependencies between input and output. Experiments on two machine translation tasks show these models to be superior in quality while being more parallelizable and requiring significantly less time to train.",
+      "source_coordinates": {
+        "x0": 50.0,
+        "y0": 140.0,
+        "x1": 540.26,
+        "y1": 206.05,
+        "width": 490.26,
+        "height": 66.05
+      },
+      "extraction_method": "pymupdf_layout",
+      "created_at": "2026-11-02T18:59:25.242049"
+    },
+    {
+      "id": "paper_attn_p1_txt_4",
+      "paper_id": "paper_attn",
+      "page_number": 1,
+      "section_name": "Introduction",
+      "element_type": "text",
+      "content": "1. Introduction Recurrent neural networks, long short-term memory (LSTM) and gated recurrent neural networks have been firmly established as state-of-the-art approaches in sequence modeling. Recurrent models typically factor computation along the symbol positions of the input and output sequences. This inherently sequential nature precludes parallelization within training examples, which becomes critical at longer sequence lengths, as memory constraints limit batching across examples.",
+      "raw_content": "1. Introduction Recurrent neural networks, long short-term memory (LSTM) and gated recurrent neural networks have been firmly established as state-of-the-art approaches in sequence modeling. Recurrent models typically factor computation along the symbol positions of the input and output sequences. This inherently sequential nature precludes parallelization within training examples, which becomes critical at longer sequence lengths, as memory constraints limit batching across examples.",
+      "source_coordinates": {
+        "x0": 50.0,
+        "y0": 230.0,
+        "x1": 543.1,
+        "y1": 296.05,
+        "width": 493.1,
+        "height": 66.05
+      },
+      "extraction_method": "pymupdf_layout",
+      "created_at": "2026-11-02T18:59:25.242049"
+    },
+    {
+      "id": "paper_attn_p1_txt_5",
+      "paper_id": "paper_attn",
+      "page_number": 1,
+      "section_name": "Introduction",
+      "element_type": "text",
+      "content": "2. Model Architecture The Transformer follows an overall architecture using stacked self-attention and point-wise, fully connected layers for both the encoder and decoder. The encoder is composed of a stack of N = 6 identical layers. Each layer has two sub-layers. The first is a multi-head self-attention mechanism, and the second is a simple, position-wise fully connected feed-forward network.",
+      "raw_content": "2. Model Architecture The Transformer follows an overall architecture using stacked self-attention and point-wise, fully connected layers for both the encoder and decoder. The encoder is composed of a stack of N = 6 identical layers. Each layer has two sub-layers. The first is a multi-head self-attention mechanism, and the second is a simple, position-wise fully connected feed-forward network.",
+      "source_coordinates": {
+        "x0": 50.0,
+        "y0": 310.07,
+        "x1": 534.19,
+        "y1": 362.77,
+        "width": 484.19,
+        "height": 52.71
+      },
+      "extraction_method": "pymupdf_layout",
+      "created_at": "2026-11-02T18:59:25.242049"
+    },
+    {
+      "id": "paper_attn_p1_txt_7",
+      "paper_id": "paper_attn",
+      "page_number": 1,
+      "section_name": "Introduction",
+      "element_type": "text",
+      "content": "Figure 1: The Transformer model architecture utilizing stacked multi-head self-attention and layer normalization.",
+      "raw_content": "Figure 1: The Transformer model architecture utilizing stacked multi-head self-attention and layer normalization.",
+      "source_coordinates": {
+        "x0": 50.0,
+        "y0": 625.86,
+        "x1": 469.48,
+        "y1": 637.54,
+        "width": 419.48,
+        "height": 11.68
+      },
+      "extraction_method": "pymupdf_layout",
+      "created_at": "2026-11-02T18:59:25.242049"
+    },
+    {
+      "id": "paper_attn_p1_txt_8",
+      "paper_id": "paper_attn",
+      "page_number": 1,
+      "section_name": "Introduction",
+      "element_type": "text",
+      "content": "3. Scaled Dot-Product Attention We compute the attention function on a set of queries simultaneously, packed together into a matrix Q. The keys and values are also packed into matrices K and V:",
+      "raw_content": "3. Scaled Dot-Product Attention We compute the attention function on a set of queries simultaneously, packed together into a matrix Q. The keys and values are also packed into matrices K and V:",
+      "source_coordinates": {
+        "x0": 50.0,
+        "y0": 655.0,
+        "x1": 534.68,
+        "y1": 694.36,
+        "width": 484.68,
+        "height": 39.36
+      },
+      "extraction_method": "pymupdf_layout",
+      "created_at": "2026-11-02T18:59:25.242049"
+    },
+    {
+      "id": "paper_attn_p1_txt_9",
+      "paper_id": "paper_attn",
+      "page_number": 1,
+      "section_name": "Introduction",
+      "element_type": "text",
+      "content": "Attention(Q, K, V) = softmax(Q K^T / sqrt(d_k)) V    (1)",
+      "raw_content": "Attention(Q, K, V) = softmax(Q K^T / sqrt(d_k)) V    (1)",
+      "source_coordinates": {
+        "x0": 50.0,
+        "y0": 708.38,
+        "x1": 267.72,
+        "y1": 721.05,
+        "width": 217.72,
+        "height": 12.67
+      },
+      "extraction_method": "pymupdf_layout",
+      "created_at": "2026-11-02T18:59:25.242049"
+    },
+    {
+      "id": "paper_attn_p1_txt_10",
+      "paper_id": "paper_attn",
+      "page_number": 1,
+      "section_name": "Introduction",
+      "element_type": "text",
+      "content": "where d_k is the dimension of the keys and queries. Scaling prevents softmax saturation in high-dimensional spaces.",
+      "raw_content": "where d_k is the dimension of the keys and queries. Scaling prevents softmax saturation in high-dimensional spaces.",
+      "source_coordinates": {
+        "x0": 50.0,
+        "y0": 735.07,
+        "x1": 493.28,
+        "y1": 747.74,
+        "width": 443.28,
+        "height": 12.67
+      },
+      "extraction_method": "pymupdf_layout",
+      "created_at": "2026-11-02T18:59:25.242049"
+    },
+    {
+      "id": "paper_attn_p1_fig_0",
+      "paper_id": "paper_attn",
+      "page_number": 1,
+      "section_name": "Introduction",
+      "element_type": "figure",
+      "content": "**[ARCHITECTURE_DIAGRAM]** Figure 1: The Transformer model architecture utilizing stacked multi-head self-attention and layer normalization.\n\n*Image Path:* `extracted/paper_attn/figures/fig_p1_0.png`\n\nFigure 1: The Transformer model architecture utilizing stacked multi-head self-attention and layer normalization.. High-resolution visual element representing architecture diagram.",
+      "raw_content": "{'caption': 'Figure 1: The Transformer model architecture utilizing stacked multi-head self-attention and layer normalization.', 'image_path': 'extracted/paper_attn/figures/fig_p1_0.png', 'type': 'architecture_diagram', 'dimensions': {'width': 600, 'height': 220}}",
+      "source_coordinates": {
+        "x0": 92.95,
+        "y0": 470.0,
+        "x1": 502.05,
+        "y1": 620.0,
+        "width": 409.09,
+        "height": 150.0
+      },
+      "extraction_method": "pymupdf_image_xref",
+      "created_at": "2026-11-02T18:59:25.242049"
+    },
+    {
+      "id": "paper_attn_p1_eq_9",
+      "paper_id": "paper_attn",
+      "page_number": 1,
+      "section_name": "Introduction",
+      "element_type": "equation",
+      "content": "**Equation (1)**\n\n$$\nAttention(Q, K, V) = softmax(Q K^T / sqrt(d_k)) V    (1)\n$$",
+      "raw_content": "Attention(Q, K, V) = softmax(Q K^T / sqrt(d_k)) V    (1)",
+      "source_coordinates": {
+        "x0": 50.0,
+        "y0": 708.38,
+        "x1": 267.72,
+        "y1": 721.05,
+        "width": 217.72,
+        "height": 12.67
+      },
+      "extraction_method": "pymupdf_math_heuristics",
+      "created_at": "2026-11-02T18:59:25.242049"
+    },
+    {
+      "id": "paper_attn_p2_txt_0",
+      "paper_id": "paper_attn",
+      "page_number": 2,
+      "section_name": "Introduction",
+      "element_type": "text",
+      "content": "4. Experimental Evaluation & Results On the WMT 2014 English-to-German translation task, the big transformer model achieves a BLEU score of 28.4. On the WMT 2014 English-to-French translation task, our model establishes a new state-of-the-art score of 41.8 BLEU. Table 1 outlines performance benchmarks compared with recurrent and convolutional architectures.",
+      "raw_content": "4. Experimental Evaluation & Results On the WMT 2014 English-to-German translation task, the big transformer model achieves a BLEU score of 28.4. On the WMT 2014 English-to-French translation task, our model establishes a new state-of-the-art score of 41.8 BLEU. Table 1 outlines performance benchmarks compared with recurrent and convolutional architectures.",
+      "source_coordinates": {
+        "x0": 50.0,
+        "y0": 60.0,
+        "x1": 538.64,
+        "y1": 112.71,
+        "width": 488.64,
+        "height": 52.71
+      },
+      "extraction_method": "pymupdf_layout",
+      "created_at": "2026-11-02T18:59:25.242049"
+    },
+    {
+      "id": "paper_attn_p2_txt_1",
+      "paper_id": "paper_attn",
+      "page_number": 2,
+      "section_name": "Introduction",
+      "element_type": "text",
+      "content": "Table 1: Translation Benchmark on WMT 2014 English-to-German and English-to-French | Architecture | En-De BLEU | En-Fr BLEU | Training FLOPs | Latency (ms) | | --- | --- | --- | --- | --- | | ByteNet | 23.75 | 39.20 | 1.0e19 | 145 | | ConvS2S | 25.16 | 40.46 | 9.6e18 | 120 | | MoE | 26.03 | 40.56 | 2.0e19 | 180 | | Transformer (Base) | 27.30 | 38.10 | 3.3e18 | 48 | | Transformer (Big) | 28.40 | 41.80 | 2.3e19 | 82 |",
+      "raw_content": "Table 1: Translation Benchmark on WMT 2014 English-to-German and English-to-French | Architecture | En-De BLEU | En-Fr BLEU | Training FLOPs | Latency (ms) | | --- | --- | --- | --- | --- | | ByteNet | 23.75 | 39.20 | 1.0e19 | 145 | | ConvS2S | 25.16 | 40.46 | 9.6e18 | 120 | | MoE | 26.03 | 40.56 | 2.0e19 | 180 | | Transformer (Base) | 27.30 | 38.10 | 3.3e18 | 48 | | Transformer (Big) | 28.40 | 41.80 | 2.3e19 | 82 |",
+      "source_coordinates": {
+        "x0": 50.0,
+        "y0": 150.0,
+        "x1": 492.8,
+        "y1": 234.58,
+        "width": 442.8,
+        "height": 84.58
+      },
+      "extraction_method": "pymupdf_layout",
+      "created_at": "2026-11-02T18:59:25.242049"
+    },
+    {
+      "id": "paper_attn_p2_txt_2",
+      "paper_id": "paper_attn",
+      "page_number": 2,
+      "section_name": "Introduction",
+      "element_type": "text",
+      "content": "5. Computational Complexity Analysis The computational complexity per layer of Self-Attention is O(n^2 * d), where n is the sequence length and d is representation dimension. In contrast, Recurrent layers require O(n * d^2) operations with O(n) sequential operations.",
+      "raw_content": "5. Computational Complexity Analysis The computational complexity per layer of Self-Attention is O(n^2 * d), where n is the sequence length and d is representation dimension. In contrast, Recurrent layers require O(n * d^2) operations with O(n) sequential operations.",
+      "source_coordinates": {
+        "x0": 50.0,
+        "y0": 310.0,
+        "x1": 531.22,
+        "y1": 362.71,
+        "width": 481.22,
+        "height": 52.71
+      },
+      "extraction_method": "pymupdf_layout",
+      "created_at": "2026-11-02T18:59:25.242049"
+    },
+    {
+      "id": "paper_attn_p2_txt_3",
+      "paper_id": "paper_attn",
+      "page_number": 2,
+      "section_name": "Introduction",
+      "element_type": "text",
+      "content": "6. Stated Limitations The primary limitation noted by the authors is the quadratic computational complexity with respect to sequence length n. For very long documents (n > 4096), GPU memory consumption grows quadratically. Additionally, the model lacks an innate concept of recurrent order, necessitating positional encodings.",
+      "raw_content": "6. Stated Limitations The primary limitation noted by the authors is the quadratic computational complexity with respect to sequence length n. For very long documents (n > 4096), GPU memory consumption grows quadratically. Additionally, the model lacks an innate concept of recurrent order, necessitating positional encodings.",
+      "source_coordinates": {
+        "x0": 50.0,
+        "y0": 376.72,
+        "x1": 544.47,
+        "y1": 429.43,
+        "width": 494.47,
+        "height": 52.71
+      },
+      "extraction_method": "pymupdf_layout",
+      "created_at": "2026-11-02T18:59:25.242049"
+    },
+    {
+      "id": "paper_attn_p2_txt_4",
+      "paper_id": "paper_attn",
+      "page_number": 2,
+      "section_name": "Introduction",
+      "element_type": "text",
+      "content": "7. Future Work & Conclusion Future research directions include extending attention mechanisms to handle multimodal inputs such as imagery, audio, and video, as well as investigating sparse attention approximations to lower memory footprint.",
+      "raw_content": "7. Future Work & Conclusion Future research directions include extending attention mechanisms to handle multimodal inputs such as imagery, audio, and video, as well as investigating sparse attention approximations to lower memory footprint.",
+      "source_coordinates": {
+        "x0": 50.0,
+        "y0": 443.45,
+        "x1": 520.99,
+        "y1": 482.81,
+        "width": 470.99,
+        "height": 39.36
+      },
+      "extraction_method": "pymupdf_layout",
+      "created_at": "2026-11-02T18:59:25.242049"
+    },
+    {
+      "id": "paper_attn_p2_tbl_text",
+      "paper_id": "paper_attn",
+      "page_number": 2,
+      "section_name": "Introduction",
+      "element_type": "table",
+      "content": "### Table 1 outlines performance benchmarks compared with recurrent and convolutional architectures.\n\n| Architecture | En-De BLEU | En-Fr BLEU | Training FLOPs | Latency (ms) |\n| --- | --- | --- | --- | --- |\n| ByteNet | 23.75 | 39.20 | 1.0e19 | 145 |\n| ConvS2S | 25.16 | 40.46 | 9.6e18 | 120 |\n| MoE | 26.03 | 40.56 | 2.0e19 | 180 |\n| Transformer (Base) | 27.30 | 38.10 | 3.3e18 | 48 |\n| Transformer (Big) | 28.40 | 41.80 | 2.3e19 | 82 |",
+      "raw_content": "{'caption': 'Table 1 outlines performance benchmarks compared with recurrent and convolutional architectures.', 'columns': ['Architecture', 'En-De BLEU', 'En-Fr BLEU', 'Training FLOPs', 'Latency (ms)'], 'rows': [['ByteNet', '23.75', '39.20', '1.0e19', '145'], ['ConvS2S', '25.16', '40.46', '9.6e18', '120'], ['MoE', '26.03', '40.56', '2.0e19', '180'], ['Transformer (Base)', '27.30', '38.10', '3.3e18', '48'], ['Transformer (Big)', '28.40', '41.80', '2.3e19', '82']], 'row_count': 5, 'column_count': 5}",
+      "source_coordinates": {
+        "x0": 50.0,
+        "y0": 150.0,
+        "x1": 545.0,
+        "y1": 300.0,
+        "width": 495.0,
+        "height": 150.0
+      },
+      "extraction_method": "text_pipe_parser",
+      "created_at": "2026-11-02T18:59:25.242049"
+    }
+  ]
+}
